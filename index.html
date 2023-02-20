@@ -1,0 +1,241 @@
+<html>
+    <head>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Inter:wght@100&family=Kanit:wght@100;800;900&family=Martel+Sans:wght@900&family=Montserrat+Subrayada&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200&family=Sacramento&display=swap" rel="stylesheet">
+
+        <!-- FONT AWESOME ICONS LINKS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <script src="https://unpkg.com/split-type"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+        <!-- SCROLL TRIGGER -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>  
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    </head>
+    <body style="scroll-behavior: smooth;">
+        <section class="viewport">
+    
+            <div id="scroll-container" class="scroll-container">
+              <div class="content">
+                <!-- HEADER -->
+                <nav>
+                    <div class="logo">
+                        <h3>Divyesh Rathod</h3>
+                    </div>
+                    <div class="links">
+                        <a href="#about">About</a>
+                        <a href="#project">Projects</a>
+                        <a href="#skill">Skills</a>
+                        <a href="#experience">Experience</a>
+                    </div>
+                </nav>
+                <div class="banner">
+                    <div class="ch_banner">
+                        <!-- <h1 id="hello">Hello</h1>
+                        <h2 id="name">I'm Divyesh, I do websites </h2> -->
+                        <div id="preloader" class="preloader_class">
+                            <div class="firstline">
+                                <h1 id="preload_line1">Divyesh</h1>
+                            </div>
+                            <div class="secondline">
+                                <div class="left">
+                                    <h1 id="preload_line2">Rathod</h1>
+                                    <h1 id="preload_line5">Web Developer</h1>
+                                </div>
+                                <div class="right">
+                                    <h1 id="preload_line3">My biggest motivation?</h1>
+                                    <h1 id="preload_line4">To keep challenging myself.</h1>
+                                    <h1 id="preload_line6">Experience It . . . .</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- PHOTO BANNER -->
+                <div class="photo_banner">
+                    <div class="img">
+                        <img src="images/IMG-0283.jpg" alt="">
+                    </div>
+                    <h1>Divyesh Rathod</h1>
+                    <h2>a.k.a Dev Divs</h2>
+                </div>
+                <!-- ABOUT ME -->
+                <div class="about" id="about">
+                    <h1>About me</h1>
+                    <p class="first_p">Hi there! My name is Divyesh and I am a computer science student with a focus on web development. I have a strong passion for creating dynamic, interactive, and user-friendly websites and web applications. I am proficient in technologies such as HTML, CSS, JavaScript,GSAP Animations and frameworks such as React and Angular. </p>
+                    <p class="second_p">I have worked on several web development projects and have gained experience in creating responsive and efficient web solutions.In addition to web development, I have also developed an interest in database management and back-end technologies such as PHP. I am always eager to learn and stay up-to-date with the latest web development trends and technologies.</p>
+                    <p class="third_p">I am a dedicated and hardworking individual who takes pride in delivering high-quality work. I am always looking for new challenges and opportunities to expand my skills and knowledge in web development. In the future, I hope to work for a leading tech company and contribute to the growth and development of the web development industry.</p>
+                </div>
+                
+                <!-- SKILLS -->
+
+                <div class="skill" id="skill">
+                    <h1 class="skill_heading">Skills</h1>
+                    <div class="ch_skill">
+                        <h1 class="skill0">GSAP 3.0</h1>
+                        <h1 class="skill1">JAVASCRIPT</h1>
+                        <h1 class="skill2">PHP</h1>
+                        <h1 class="skill3">HTML</h1>
+                        <h1 class="skill4">CSS</h1>
+                        <h1 class="skill5">Wordpress Development</h1>
+                        <h1 class="skill6">React JS</h1>
+                        <h1 class="skill7">MySQL</h1>
+                        <h1 class="skill8">UI/UX Design</h1>
+                        <h1 class="skill9">UI Development</h1>
+                    </div>
+                </div>
+
+                <!-- PROJECTS -->
+                <div class="project" id="project">
+                    <h1 class="project_heading">Check my stuffs</h1>
+                    <nav>
+                        <ul>
+                            <li>
+                                <div class="link">
+                                    <span>Github Clone</span>
+                                    <div class="hover-reveal image01">
+                                        <img class="hidden-img" src="images/github.jpg " alt="">
+                                    </div>
+                                </div>
+                                <div class="link">
+                                    <span>Netflix Clone</span>
+                                    <div class="hover-reveal image01">
+                                        <img class="hidden-img" src="images/netflix.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="link">
+                                    <span>Spotify Clone</span>
+                                    <div class="hover-reveal image01">
+                                        <img class="hidden-img" src="images/spotify.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="link">
+                                    <span>E Hand Craft Shopping</span>
+                                    <div class="hover-reveal image01">
+                                        <img class="hidden-img" src="images/Ecommerce.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- EXPERIENCE -->
+                <div class="project experience" id="experience">
+                    <h1 class="project_heading">Experience</h1>
+                    <nav>
+                        <ul>
+                            <li>
+                                <div class="link">
+                                    <span>College Faculty's Websites (Wordpress)</span>
+                                    <div class="hover-reveal image01">
+                                        <img class="hidden-img" src="images/faculty.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="link">
+                                    <span>SSIP Hackathons</span>
+                                    <div class="hover-reveal image01">
+                                        <img class="hidden-img" src="images/IMG-0339.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="link">
+                                    <span>Intern at Oasis Infobyte (Current)</span>
+                                    <div class="hover-reveal image01">
+                                        <img class="hidden-img" src="images/8401.jpg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                
+                <!-- CONTACT -->
+                <div class="contact" id="contact_d">
+                    <div class="ch_contact">
+                        <div class="left_contact">
+                            <div class="item">
+                                <div class="left">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                </div>
+                                <div class="right">
+                                    <a href="https://www.linkedin.com/in/divyesh-rathod-b05b961b5/"><h3 id="linkedin">Linkedin</h3></a>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="item">
+                                <div class="left">
+                                    <i class="fa fa-brands fa-instagram"></i>
+                                </div>
+                                <div class="right">
+                                    <a href="https://www.instagram.com/divyesh__.js/"><h3 id="instagram">Instagram</h3></a>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="item">
+                                <div class="left">
+                                    <i class="fa fa-brands fa-twitter"></i>
+                                </div>
+                                <div class="right">
+                                    <a href="https://twitter.com/Divyesh67457592"><h3 id="twitter">Twitter</h3></a>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="item">
+                                <div class="left">
+                                    <i class="fa fa-brands fa-facebook"></i>
+                                </div>
+                                <div class="right">
+                                    <a href="https://www.facebook.com/divyesh.rathod.798278/"><h3 id="facebook">Facebook</h3></a>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="item">
+                                <div class="left">
+                                    <i class="fa fa-brands fa-github"></i>
+                                </div>
+                                <div class="right">
+                                    <a href="https://github.com/divyesh0541"><h3 id="github">Github</h3></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right_contact">
+                            <h1 id="contact_through">You can contact me through all this way</h1>
+                        </div>
+                    </div>
+                </div> <!-- CLOSING CONTACT -->
+
+                <!-- FOOTER -->
+                <div class="footer">
+                    <div class="ch_footer">
+                        <div class="left">
+                            <h1>Divyesh Rathod</h1>
+                            <h2>If you're looking for a web developer with a passion for technology and a commitment to delivering outstanding results, I would love to hear from you. Thank you for taking the time to consider my profile.</h2>
+                            <h3>Design By - Divyesh Rathod</h3>
+                        </div>
+                        <div class="right">
+                            <a href="https://twitter.com/Divyesh67457592"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="https://github.com/divyesh0541"><i class="fa fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/divyesh__.js/"><i class="fa fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+
+              </div>
+            </div>
+            
+        </div>
+         
+      </section>
+      
+
+    </body>
+    <script src="effect.js"></script>
+</html>

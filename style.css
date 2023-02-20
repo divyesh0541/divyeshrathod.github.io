@@ -1,0 +1,611 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #e9efef;
+    width: 95%;
+    margin: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+/* PRELOADER */
+#preloader{
+    width: 70%;
+    margin-top: 5%;
+    z-index: 9999;
+    transition: opacity 0.3s linear;
+}
+.firstline #preload_line1{
+    font-size: 90px;
+    text-align: center;
+    letter-spacing: 10px;
+    margin-bottom: 0px;
+}
+.secondline .left{
+    width: 60%;
+    float: left;
+}
+.secondline .left #preload_line2{
+    margin: 0;
+    font-size: 80px;
+    letter-spacing: 10px;
+}
+.secondline .left #preload_line5{
+    margin-top: 0;
+    font-size: 20px;
+}
+.secondline .right
+{
+    width: 40%;
+    float: left;
+    margin-top: 20px;
+}
+.secondline .right #preload_line3{
+    margin: 0;
+font-size: 20px;
+}
+.secondline .right #preload_line4{
+    margin: 0;
+}
+.secondline .right #preload_line6{
+    margin: 0;
+font-size: 20px;
+margin-top: 7%;
+}
+#preload_line1{
+    clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);
+    text-transform: uppercase;
+}
+#preload_line2{
+    clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);
+    text-transform: uppercase;
+}
+#preload_line3{
+    clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);
+    font-weight: 400;
+}
+#preload_line4{
+    clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);
+}
+#preload_line5{
+    clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);
+    font-weight: 400;
+}
+#preload_line6{
+    clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);
+    font-weight: 400;
+}
+#preload_line1 .char{
+transform: translateY(180px);
+transition: transform .8s;
+}
+#preload_line2 .char{
+transform: translateY(-180px);
+transition: transform .8s;
+}
+#preload_line3 .char{
+transform: translateY(180px);
+transition: transform .8s;
+}
+#preload_line4 .char{
+transform: translateY(-180px);
+transition: transform .8s;
+}
+#preload_line5 .char{
+transform: translateY(-180px);
+transition: transform .8s;
+}
+#preload_line6 .char{
+transform: translateY(140px);
+transition: transform .8s;
+}
+/* CLOSE */
+.viewport {
+    overflow: hidden;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    top: 0;
+    right: 0;   
+    left: 0;
+    bottom: 0;
+  }
+  .scroll-container {  
+    position: absolute;  
+    overflow: hidden;
+    z-index: 10;
+    display: flex;
+    justify-content: center;  
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+  }
+  nav .logo h3{
+    font-weight: 200;
+    letter-spacing: 3px;
+    font-size: 35px;
+    font-family: Sacramento;
+    border-left: 2px solid;
+    border-top: 1px solid;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1%;
+    width: 90%;
+    margin: auto;
+}
+nav .links a {
+    text-decoration: none;
+    margin: 0px 30px;
+    color: black;
+    display: inline-block;
+}
+.banner{
+    margin-top: 12%;
+}
+.ch_banner{
+    margin-left: 15%;
+}
+.ch_banner h1{
+    font-size: 25px;
+    margin-bottom: 0%;
+}
+.ch_banner h2{
+    font-size: 30px;
+    margin-top: 0%;
+}
+.photo_banner {
+    position: relative;
+    text-align: center;
+    margin-top: 35%;
+}
+.photo_banner img{
+    width: 350px;
+    opacity: 0.4;
+}
+.photo_banner .img {
+    width: 40%;
+    margin: auto;
+}
+.photo_banner h1{
+    position: absolute;
+    font-size: 80px;
+    bottom: 20%;
+    width: 100%;
+    letter-spacing: 10px;
+    top: 55%;
+}
+.photo_banner h2 {
+    position: absolute;
+    bottom: 20%;
+    width: 1019px;
+    margin-top: 0px;
+    text-align: right;
+    top: 90%;
+}
+.about{
+    margin: auto;
+    width: 65%;
+    margin-top: 25%;
+}
+.about h1{
+    text-align: center;
+    font-size: 70px;
+}
+.about .first_p{
+    font-size: 20px;
+    width: 75%;
+    line-height: 30px;
+    margin-top: 12%;
+}
+.about .second_p{
+    font-size: 20px;
+    width: 70%;
+    float: right;
+    line-height: 30px;
+    margin-top: 12%;
+}
+.contact .item{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.about .third_p{
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 30%;
+    line-height: 30px;
+    margin-top: 12%;
+}
+
+/* TEXT ANIMATIONS */
+#hello {clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);}
+#name {clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);}
+#linkedin {clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);font-size: 22px;
+    font-weight: 400;}
+#instagram {clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);font-size: 22px;
+    font-weight: 400;}
+#twitter {clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);font-size: 22px;
+    font-weight: 400;}
+#facebook {clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);font-size: 22px;
+    font-weight: 400;}
+#github {clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);font-size: 22px;
+    font-weight: 400;}
+#emailme {clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);font-size: 22px;
+    font-weight: 400;}
+#contact_through {clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);font-size: 45px;
+        font-weight: 400;}
+
+#hello .char{
+    transform: translateY(180px);
+    transition: transform .8s;
+}
+#name .char{
+    transform: translateY(50px);
+    transition: transform .3s;
+}
+#contact_through .char{
+    transform: translateY(150px);
+    transition: transform .3s;
+}
+#linkedin .char{
+    transform: translateY(150px);
+    transition: transform .3s;
+}
+#instagram .char{
+    transform: translateY(150px);
+    transition: transform .3s;
+}
+#facebook .char{
+    transform: translateY(150px);
+    transition: transform .3s;
+}
+#twitter .char{
+    transform: translateY(150px);
+    transition: transform .3s;
+}
+#github .char{
+    transform: translateY(150px);
+    transition: transform .3s;
+}
+#emailme .char{
+    transform: translateY(150px);
+    transition: transform .3s;
+}
+
+/* skill animation */
+.skill1 .char{
+    transform: translateY(150px);
+    transition: transform .3s;
+}
+.skill2 .char{
+    transform: translateY(150px);
+    transition: transform .3s;
+}
+.skill3 .char{
+    transform: translateY(150px);
+    transition: transform .3s;
+}
+.skill4 .char{
+    transform: translateY(150px);
+    transition: transform .3s;
+}
+.skill5 .char{
+    transform: translateY(150px);
+    transition: transform .3s;
+}
+.skill6 .char{
+    transform: translateY(150px);
+    transition: transform .3s;
+}
+.skill7 .char{
+    transform: translateY(150px);
+    transition: transform .3s;
+}
+.skill8 .char{
+    transform: translateY(150px);
+    transition: transform .3s;
+}
+.skill9 .char{
+    transform: translateY(150px);
+    transition: transform .3s;
+}
+.skil10 .char{
+    transform: translateY(150px);
+    transition: transform .3s;
+}
+.skill1 {clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);}
+.skill2 {clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);}
+.skill3 {clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);}
+.skill4 {clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);}
+.skill5 {clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);}
+.skill6 {clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);}
+.skill7 {clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);}
+.skill8 {clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);}
+.skill9 {clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);}
+.skil10 {clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);}
+
+/* PROJECT */
+.project a, a:visited, a:hover {
+	text-decoration: none;
+}
+.project{
+    margin-top: 15%;
+    transition: transform .3s;
+}
+
+.project .project_heading{
+    width: 80%;
+    margin: auto;
+    font-size: 40px;
+    text-decoration: underline;
+    margin-top: 4%;
+}
+.project li {
+	list-style: none;
+}
+
+.project nav {
+	min-height: 100vh;
+	overflow: hidden;
+	display:grid;
+	place-items:center;
+}
+
+.project nav ul {
+	width: 80%;
+}
+
+
+.experience .hover-reveal{
+    width: 65% !important;
+    height: 40% !important;
+}
+.project nav ul li {
+	border-bottom: solid #ffffff .05rem;
+	position: relative;
+	z-index: 10;
+}
+
+.project nav ul li .link{
+	display: flex;
+	padding: 4rem 0 2rem 0;
+	z-index: 10;
+	justify-content:space-between;
+}
+
+.project nav ul li .link span {
+	display: block;
+	font-weight: 500;
+	z-index: 10;
+	mix-blend-mode: difference;
+	display: inline-block;
+	position: relative;
+	color: black;
+	font-size: 4rem;
+	text-transform: uppercase;
+}
+.project nav ul li .link > img {
+	mix-blend-mode: difference;
+	z-index: 10;
+}
+
+
+.project .hover-reveal {
+	position: absolute;
+	width: 80%;
+	height: 38%;
+	top: 50%;
+	left: 50%;
+	pointer-events: none;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	opacity: 0;
+	transform: scale(0.8);
+	transition: all .5s ease-out;
+}
+
+.project .hover-reveal img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: relative;
+	transition: transform .4s ease-out;
+}
+
+
+@media (max-width: 768px) {
+	.project nav ul {
+		width: 93%;
+	}
+	.project nav ul li a span {
+		font-size: 2.5rem;
+	}
+	.project nav ul li a > img {
+		height: 18px;
+	}
+	.project .hover-reveal {
+		width: 220px;
+		height: 300px;
+	}
+}
+
+/* SKILLS */
+.skill{
+    padding: 40% 0%;
+    height: 260px;
+    padding-top: 0%;
+    margin-top: 20%;
+}
+.skill .skill_heading{
+    width: 80%;
+    margin: auto;
+    font-size: 40px;
+    margin-bottom: 15%;
+    text-decoration: underline;
+}
+.skill .ch_skill{
+    position: relative;
+}
+.skill .skill0{
+    margin-top: 11%;
+    position: absolute;
+    left: 60%;
+    font-size: 50px;
+}
+
+.skill .skill1{
+    position: absolute;
+    left: 75%;
+    top: 376%;
+    top: 24%;
+    margin-top: -8%;
+}
+.skill .skill10{
+    left: 11%;
+    margin-top: 34%;
+}
+.skill .skill2{
+    position: absolute;
+    top: -414%;
+    left: 25%;
+    font-size: 50px;
+    margin-top: 0%;
+}
+.skill .skill3{
+    position: absolute;
+    left: 51%;
+    top: -136%;
+    font-size: 25px;
+}
+.skill .skill4{
+    position: absolute;
+    left: 70%;
+    top: -140%;
+    font-size: 40px;
+}
+.skill .skill5{
+    left: 53%;
+    top: 124%;
+    position: absolute;
+    margin-top: 31%;
+    font-size: 26px;
+}
+.skill .skill6{
+    left: 13%;
+    top: 70%;
+    position: absolute;
+    font-size: 50px;
+    margin-top: 8%;
+}
+.skill .skill7{
+    left: 34%;
+    top: 445%;
+    position: absolute;
+    font-size: 30px;
+    margin-top: 26%;
+}
+.skill .skill8{
+    left: 28%;
+    top: 807%;
+    position: absolute;
+    margin-top: -8%;
+}
+.skill .skill9{
+    left: 43%;
+    top: 471%;
+    position: absolute;
+    font-size: 50px;
+    margin-top: 20%;
+}
+
+/* CONTACT */
+.contact{
+    margin: auto;
+    width: 80%;
+    margin-top: 10%;
+}
+.contact .item .left{
+     margin-right: 5%;
+}
+.contact .item .left i {
+    border-radius: 100%;
+    padding: 11px 13px;
+    background: black;
+    color: white;
+    font-size: 20px;
+}
+.contact .ch_contact {
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+.contact .ch_contact .left_contact{
+    width: 50%;
+    float: left;
+}
+.contact .ch_contact .right_contact{
+    width: 50%;
+    float: left;
+}
+.contact .ch_contact .right_contact h1{
+    font-size: 40px;    
+}
+.contact .ch_contact{
+    display: flex;
+    align-items: center;
+}
+.contact .left_contact .item .right a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+/* FOOTER */
+.footer{
+    color: white;
+    background: black;
+    text-align: center;
+    margin-top: 10%;
+}
+.ch_footer {
+    width: 70%;
+    margin: auto;
+    padding: 40px 0px;
+    display: flex;
+}
+.ch_footer .left{
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+.ch_footer .right{
+    width: 50%;
+    padding-top: 2%;
+}
+.ch_footer .left h1{
+    font-weight: 200;
+    text-decoration: underline;
+    font-size: 18px;
+}
+.ch_footer .left h2{
+    font-weight: 200;
+    font-size: 20px;
+}
+.ch_footer .left h3{
+    font-weight: 500;
+}
+.ch_footer .right i {
+    border-radius: 100%;
+    padding: 11px 13px;
+    background: white;
+    color: black;
+    font-size: 20px;
+    margin-right: 15px; 
+}
