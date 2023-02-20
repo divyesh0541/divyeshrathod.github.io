@@ -183,10 +183,10 @@ nav .links a {
 }
 .photo_banner h2 {
     position: absolute;
-    bottom: 20%;
-    width: 1019px;
-    margin-top: 0px;
-    text-align: right;
+    /* bottom: 20%; */
+    /* width: 1019px; */
+    margin-top: 20px;
+    text-align: center;
     top: 90%;
 }
 .about{
