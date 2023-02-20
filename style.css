@@ -187,7 +187,9 @@ nav .links a {
     /* width: 1019px; */
     margin-top: 20px;
     text-align: center;
-    top: 90%;
+    top: 85%;
+	width:100%;
+	
 }
 .about{
     margin: auto;
